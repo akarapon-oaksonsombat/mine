@@ -22,7 +22,7 @@ class AppTheme  {
     }else if(!bright && !trueBlack){
       bright = false; trueBlack = true;
     }else if(!bright && trueBlack){
-      bright = true;
+      bright = true;  trueBlack = false;
     }
     update();
   }
