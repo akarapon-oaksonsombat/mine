@@ -63,20 +63,6 @@ class MyHomePageState extends State<MyHomePage> {
               leading: Container(
                 height: 42.0, width: 42.0,
                 decoration: BoxDecoration(
-                    color: myTheme.fancyColor[0],
-                    shape: BoxShape.circle
-                ),
-                child: Icon(Icons.stars, size: 24.0, color: Colors.white,),),
-              title: Text('What\'s new',style: TextStyle(color: myTheme.fontColor)),
-              subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
-              onTap: (){
-
-              },
-            ),
-            ListTile(
-              leading: Container(
-                height: 42.0, width: 42.0,
-                decoration: BoxDecoration(
                     color: myTheme.fancyColor[1],
                     shape: BoxShape.circle
                 ),
@@ -107,50 +93,69 @@ class MyHomePageState extends State<MyHomePage> {
                 }));
               },
             ),
-            ListTile(
-              leading: Container(
-                height: 42.0, width: 42.0,
-                decoration: BoxDecoration(
-                    color: myTheme.fancyColor[3],
-                    shape: BoxShape.circle
-                ),
-                child: Icon(Icons.touch_app, size: 24.0, color: Colors.white,),),
-              title: Text('Drag Increment',style: TextStyle(color: myTheme.fontColor)),
-              subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
-              onTap: (){
-
-              },
-            ),
-            ListTile(
-              leading: Container(
-                height: 42.0, width: 42.0,
-                decoration: BoxDecoration(
-                    color: myTheme.fancyColor[4],
-                    shape: BoxShape.circle
-                ),
-                child: Icon(Icons.book, size: 24.0, color: Colors.white,),),
-              title: Text('How to use',style: TextStyle(color: myTheme.fontColor)),
-              subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
-              onTap: (){
-
-              },
-            ),
-            ListTile(
-              leading: Container(
-                height: 42.0, width: 42.0,
-                decoration: BoxDecoration(
-                    color: myTheme.fancyColor[5],
-                    shape: BoxShape.circle
-                ),
-                child: Icon(Icons.perm_device_information, size: 24.0, color: Colors.white,),),
-              title: Text('About',style: TextStyle(color: myTheme.fontColor)),
-              subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
-              onTap: (){
-
-              },
-            ),
           ],
         ),
     );
+  }
+  List<Widget> betaFeature (){
+    int i = 2;
+    List<Widget> betaWidget = List<Widget>();
+    betaWidget.add(ListTile(
+      leading: Container(
+        height: 42.0, width: 42.0,
+        decoration: BoxDecoration(
+            color: myTheme.fancyColor[i],
+            shape: BoxShape.circle
+        ),
+        child: Icon(Icons.stars, size: 24.0, color: Colors.white,),),
+      title: Text('What\'s new',style: TextStyle(color: myTheme.fontColor)),
+      subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
+      onTap: (){
+
+      },
+    )); i++;
+    betaWidget.add(ListTile(
+      leading: Container(
+        height: 42.0, width: 42.0,
+        decoration: BoxDecoration(
+            color: myTheme.fancyColor[i],
+            shape: BoxShape.circle
+        ),
+        child: Icon(Icons.book, size: 24.0, color: Colors.white,),),
+      title: Text('How to use',style: TextStyle(color: myTheme.fontColor)),
+      subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
+      onTap: (){
+
+      },
+    )); i++;
+    betaWidget.add(ListTile(
+      leading: Container(
+        height: 42.0, width: 42.0,
+        decoration: BoxDecoration(
+            color: myTheme.fancyColor[5],
+            shape: BoxShape.circle
+        ),
+        child: Icon(Icons.settings, size: 24.0, color: Colors.white,),),
+      title: Text('PWA Preferences',style: TextStyle(color: myTheme.fontColor)),
+      subtitle: Text('Beta Features, etc',style: TextStyle(color: myTheme.fontColor)),
+      onTap: (){
+
+      },
+    )); i++;
+    betaWidget.add(ListTile(
+      leading: Container(
+        height: 42.0, width: 42.0,
+        decoration: BoxDecoration(
+            color: myTheme.fancyColor[3],
+            shape: BoxShape.circle
+        ),
+        child: Icon(Icons.touch_app, size: 24.0, color: Colors.white,),),
+      title: Text('Drag Increment',style: TextStyle(color: myTheme.fontColor)),
+      subtitle: Text('Not Available',style: TextStyle(color: myTheme.fontColor)),
+      onTap: (){
+
+      },
+    ));
+    return betaWidget;
   }
 }
