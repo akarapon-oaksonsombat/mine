@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
-  final String title = 'Home';
+  final String title = 'Home (beta)';
   @override
   MyHomePageState createState() => MyHomePageState();
 }
